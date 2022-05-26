@@ -1,0 +1,74 @@
+.button {
+  background: transparent;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button__edit {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 19px;
+  cursor: pointer;
+  transition: ease-in 0.3s opacity;
+  background: url("/images/edit.svg") center no-repeat;
+  grid-area: edit;
+}
+
+.button__add {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+  transition: ease-in 0.3s opacity;
+  background: url("/images/add.svg") center no-repeat;
+}
+
+.button__delete {
+  background: url("/images/Trash.svg") no-repeat center;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.button__like {
+  border: none;
+  cursor: pointer;
+  background: url("/images/love.svg") no-repeat center;
+  height: 18.13px;
+  width: 20.76px;
+  align-items: flex-end;
+}
+
+.button__close {
+  border: none;
+  height: 48px;
+  width: 48px;
+  background: url(/images/Close-Icon.svg) no-repeat center;
+}
+
+@media screen and (max-width: 800px) {
+  .button {
+    margin: 0;
+  }
+
+  .button__add {
+    width: 282px;
+  }
+}
