@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.profile__pic {
+.profile__image {
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -58,5 +58,9 @@
     line-height: 17px;
     text-align: center;
     padding-bottom: 36px;
+  }
+
+  .profile__image {
+    margin: 0;
   }
 }

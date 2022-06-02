@@ -1,4 +1,4 @@
-const editModalEl = document.querySelector(".button__edit");
+const editModalEl = document.querySelector(".button-edit");
 const editModalNameInput = document.querySelector(".js-modal-name");
 const editModalTitleInput = document.querySelector(".js-modal-title");
 const saveModalEl = document.querySelector(".modal__save");
@@ -17,6 +17,7 @@ function modalClose() {
 editModalEl.addEventListener("click", function () {
   modalEl.classList.add("modal__open");
 });
+
 modalCloseBtnEl.addEventListener("click", function () {
   modalClose;
 });
@@ -24,9 +25,9 @@ modalCloseBtnEl.addEventListener("click", function () {
 editModalNameInput.value = profileNameEl.textContent;
 editModalTitleInput.value = profileTitleEl.textContent;
 
-editModalEl.addEventlistener("submit", function (event) {
-  event.preventDefault();
-  profileNameEl.textContent = editFormNameInput.value;
-  profileTitleEl.textContent = editFormTitleInput.value;
-  modalClose;
-});
+// saveModalEl.addEventlistener("click", function (event) {
+//   event.preventDefault();
+//   profileNameEl.textContent = editFormNameInput.value;
+//   profileTitleEl.textContent = editFormTitleInput.value;
+//   modalClose;
+// });
