@@ -13,21 +13,22 @@ const profileTitleEl = document.querySelector(".profile__about");
 function modalClose() {
   modalEl.classList.remove("modal__open");
 }
+console.log(modalClose);
 
 editModalEl.addEventListener("click", function () {
   modalEl.classList.add("modal__open");
 });
 
 modalCloseBtnEl.addEventListener("click", function () {
-  modalClose;
+  modalClose();
 });
 
 editModalNameInput.value = profileNameEl.textContent;
 editModalTitleInput.value = profileTitleEl.textContent;
 
-// saveModalEl.addEventlistener("click", function (event) {
-//   event.preventDefault();
-//   profileNameEl.textContent = editFormNameInput.value;
-//   profileTitleEl.textContent = editFormTitleInput.value;
-//   modalClose;
-// });
+saveModalEl.addEventListener("click", function (event) {
+  event.preventDefault();
+  profileNameEl.textContent = editModalNameInput.value;
+  profileTitleEl.textContent = editModalTitleInput.value;
+  modalClose();
+});

@@ -24,6 +24,7 @@
 }
 
 .modal__title {
+  font-family: "Inter", Arial, sans-serif;
   font-weight: 900;
   font-size: 24px;
   line-height: 29.05px;
@@ -36,10 +37,12 @@
 }
 
 .modal__input {
+  border: none;
   border-bottom: 1px solid #000;
   margin: 0 36px 29.74px 36px;
   width: 358px;
   height: 27.26px;
+  font-family: "Inter", Arial, sans-serif;
   line-height: 16.94px;
   font-size: 14px;
   font-weight: 400;
@@ -66,4 +69,22 @@
   position: absolute;
   top: -48px;
   right: -48px;
+}
+
+@media screen and (max-width: 500px) {
+  .modal__title {
+    font-size: 18px;
+    line-height: 21.78px;
+  }
+
+  .modal__input {
+    width: 238px;
+    height: 46px;
+  }
+
+  .modal__save {
+    width: 238px;
+    height: 46px;
+    margin: 30px 36px 36.51px 36px;
+  }
 }
